@@ -83,7 +83,7 @@ bot.start(async (ctx) => {
       Markup.inlineKeyboard([
         Markup.button.webApp(
           "Launch",
-          `https://mini-livid-zeta.vercel.app?userId=${ctx.from.id}&firstName=${ctx.from.username}&referralId=${uniqueId}`
+          `https://sloth-two.vercel.app?userId=${ctx.from.id}&firstName=${ctx.from.username}&referralId=${uniqueId}`
         ),
       ])
     );
@@ -93,7 +93,7 @@ bot.start(async (ctx) => {
       "Welcome to the bot! No referral data found.", {
         reply_markup: {
           inline_keyboard: [
-            [Markup.button.webApp("Launch", `https://mini-livid-zeta.vercel.app?userId=${ctx.from.id}&firstName=${ctx.from.username}&referralId=${ctx.from.id}`)],
+            [Markup.button.webApp("Launch", `https://sloth-two.vercel.app?userId=${ctx.from.id}&firstName=${ctx.from.username}&referralId=${ctx.from.id}`)],
             [{ text: "Referral", callback_data: 'referral' }]
           ]
         }
