@@ -138,7 +138,7 @@ ReferralScene.enter(async (ctx) => {
 bot.action('generate_referral', async(ctx)=>{
     uniqueId = ctx.from.id;
 
-    const referralLink = `t.me/mini_pandabot?start=refId-${uniqueId}`
+    const referralLink = `t.me/Slothgame_bot?start=refId-${uniqueId}`
 
     await UserDetails.findOneAndUpdate(
     {userId :  uniqueId },
